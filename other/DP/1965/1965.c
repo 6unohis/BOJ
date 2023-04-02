@@ -20,8 +20,6 @@ int main(){
     for(i = 1; i <= n; i++){
         for(j = i; j <= n; j++){
             if(arr[i] < arr[j]) dp[j] = max(dp[j], dp[i] + 1);
-            
-            
         }ans = max(dp[i], ans);
     }
     
